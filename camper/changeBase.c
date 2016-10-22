@@ -9,7 +9,7 @@ int main(){
   scanf("%d", &number);
   printf("Ingrese una base \n");
   scanf("%d", &base);
-  while(base > 16){
+  while(base > 16 || base < 2){
     printf("Sólo se aceptan bases en el rango [2, 16] \n");
     printf("Ingrese una base \n");
     scanf("%d", &base);
@@ -18,7 +18,7 @@ int main(){
 }
 
 void changeBase(int number, int base){
-  int cocient = number;
+  int cocient  = number;
   int baseEntry;
   // Iter
   do{
